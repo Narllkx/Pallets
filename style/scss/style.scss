@@ -11,11 +11,14 @@ $font-2: "Oswald";
 //--------------------------------Mixin--------------------------------
 @mixin name {
 }
+
 //--------------------------------Keyframes--------------------------------
 @keyframes name {
 }
+
 //--------------------------------Fonts--------------------------------
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
+
 //--------------------------------Default--------------------------------
 a {
   text-decoration: none;
@@ -45,30 +48,37 @@ body {
   background-color: $selection;
   color: $selection-color;
 }
+
 //--------------------------------Style--------------------------------
 
 header {
   .header-contact {
     background: #26201b;
     padding-bottom: 60px;
+
     ul {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       .middle {
         display: flex;
         align-items: center;
+
         li {
           margin-right: 40px;
+
           &:last-child {
             margin: 0;
           }
+
           a {
             font-weight: 500;
             font-size: 13px;
             color: #ffffff;
             display: flex;
             align-items: center;
+
             img {
               margin-right: 10px;
             }
@@ -76,6 +86,7 @@ header {
         }
       }
     }
+
     .right {
       li {
         a {
@@ -84,6 +95,7 @@ header {
           color: #ffffff;
           display: flex;
           align-items: center;
+
           img {
             margin-right: 18px;
           }
@@ -91,6 +103,7 @@ header {
       }
     }
   }
+
   nav {
     display: flex;
     align-items: center;
@@ -104,14 +117,18 @@ header {
     left: 0;
     max-width: 1344px;
     margin: auto;
+
     ul {
       display: flex;
       align-items: center;
+
       .nav-items {
         border-right: #fff solid 1px;
+
         &:last-child {
           border: none;
         }
+
         .nav-link {
           font-weight: 500;
           font-size: 18px;
@@ -121,6 +138,7 @@ header {
         }
       }
     }
+
     .nav-button {
       font-weight: 700;
       font-size: 17px;
@@ -130,20 +148,25 @@ header {
       display: flex;
       align-items: center;
       transition: 1s;
+
       svg {
         margin-right: 10px;
       }
+
       &:hover {
         transform: scale(1.05);
       }
     }
   }
+
   .header-slider {
     max-width: 1600px;
     margin: 0 auto;
+
     .slider-box {
       .slider-item {
         height: 715px;
+
         &::after {
           content: "";
           max-width: 1600px;
@@ -154,6 +177,7 @@ header {
           background-image: url(../images/slider/slider-bg.png);
           background-repeat: no-repeat;
         }
+
         .slider-info {
           position: relative;
           left: 0;
@@ -161,6 +185,7 @@ header {
           top: 0;
           bottom: 0;
           margin: auto;
+
           .slider-text {
             max-width: 1176px;
             height: 402px;
@@ -172,6 +197,7 @@ header {
             margin: auto;
             background: rgba(1, 1, 0, 0.54);
             padding: 61px 0 0 78px;
+
             .slider-title {
               font-family: $font-2;
               font-weight: 500;
@@ -180,6 +206,7 @@ header {
               color: #ffffff;
               margin-bottom: 5px;
             }
+
             .slider-subtitle {
               font-family: $font-2;
               font-weight: 600;
@@ -187,6 +214,7 @@ header {
               color: #ffffff;
               margin-bottom: 60px;
             }
+
             .slider-button {
               font-weight: 600;
               font-size: 30px;
@@ -199,6 +227,7 @@ header {
       }
     }
   }
+
   .slick-arrow {
     font-size: 0;
     width: 32px;
@@ -212,16 +241,19 @@ header {
     transition: 1s;
     cursor: pointer;
   }
-  .slick-next{
+
+  .slick-next {
     top: 340px;
     right: 80px;
   }
-  .slick-prev{
+
+  .slick-prev {
     top: 340px;
     left: 80px;
     transform: rotate(180deg);
   }
-  .slick-dots{
+
+  .slick-dots {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,12 +261,15 @@ header {
     bottom: 40px;
     right: 50%;
     left: 50%;
-    li{
+
+    li {
       margin-right: 25px;
-      &:last-child{
+
+      &:last-child {
         margin: 0;
       }
-      button{
+
+      button {
         font-size: 0;
         width: 30px;
         height: 30px;
@@ -245,35 +280,102 @@ header {
         transition: 1s;
       }
     }
-    .slick-active{
-      button{
-        background: #FF7000;
+
+    .slick-active {
+      button {
+        background: #ff7000;
       }
     }
   }
 }
+
+.product {
+  h2 {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 37px;
+    color: #ffffff;
+    background: #B19178;
+    padding: 18px 63px 18px 130px;
+    display: inline-block;
+    margin: 150px 0 100px;
+    position: relative;
+    left: -145px;
+  }
+  .product-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .product-item {
+      border: 0.5px solid #25231c;
+      max-width: 420px;
+      padding: 8px 35px 110px;
+      margin-bottom: 42px;
+      img {
+        width: 100%;
+        object-fit: contain;
+        height: 290px;
+      }
+      .product-item-box {
+        height: 113px;
+        h3 {
+          color: #ff7000;
+          font-weight: 500;
+          font-size: 20px;
+        }
+        p {
+          color: #312c21;
+          font-weight: 300;
+          font-size: 18px;
+          height: 62px;
+          margin-top: 15px;
+        }
+        a {
+          font-weight: 500;
+          font-size: 25px;
+          color: #ffffff;
+          padding: 17px 84px;
+          background: #b19178;
+          margin: 25px 0 0;
+          display: block;
+          text-align: center;
+          max-width: 350px;
+        }
+      }
+    }
+  }
+}
+
 //--------------------------------Media--------------------------------
 @media only screen and (max-width: 1660px) {
   /* */
 }
+
 @media only screen and (max-width: 1440px) {
   /* */
 }
+
 @media only screen and (max-width: 1280px) {
   /* */
 }
+
 @media only screen and (max-width: 1024px) {
   /* */
 }
+
 @media only screen and (max-width: 991px) {
   /* */
 }
+
 @media only screen and (max-width: 768px) {
   /* */
 }
+
 @media only screen and (max-width: 480px) {
   /* */
 }
+
 @media only screen and (max-width: 320px) {
   /* */
 }
