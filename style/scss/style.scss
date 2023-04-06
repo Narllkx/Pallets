@@ -357,6 +357,78 @@ header {
   }
 }
 
+.about-us {
+  background: #b19178;
+  padding: 90px 0 145px;
+  max-width: 1600px;
+  margin: 50px auto 0;
+  .container {
+    h2 {
+      font-family: $font-2;
+      font-weight: 400;
+      font-size: 37px;
+      background: #ffff;
+      padding: 18px 63px 18px 130px;
+      display: inline-block;
+      text-transform: uppercase;
+      color: #312c21;
+      position: relative;
+      left: -145px;
+      margin-bottom: 75px;
+    }
+    .about-us-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .about-us-item {
+        background-color: #fff;
+        padding: 50px 40px;
+        min-width: 240px;
+        min-height: 240px;
+        background-repeat: no-repeat;
+        &:nth-child(1) {
+          background-image: url("../images/about-us/1.svg");
+          background-position: 15px;
+        }
+        &:nth-child(2) {
+          background-image: url("../images/about-us/2.svg");
+          background-position: 35px 30px;
+        }
+        &:nth-child(3) {
+          background-image: url("../images/about-us/3.svg");
+          background-position: 20px 115px;
+        }
+        &:nth-child(4) {
+          background-image: url("../images/about-us/4.svg");
+          background-position: 70px 55px;
+        }
+        &:nth-child(5) {
+          background-image: url("../images/about-us/5.svg");
+          background-position: 30px 15px;
+        }
+        h3 {
+          font-weight: 500;
+          font-size: 27px;
+          color: #312c21;
+        }
+        h4 {
+          font-family: $font-2;
+          font-weight: 600;
+          font-size: 34px;
+          color: #ff7000;
+          margin-top: 10px;
+        }
+        h5 {
+          font-weight: 600;
+          font-size: 18px;
+          color: #312c21;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
 //--------------------------------Media--------------------------------
 @media only screen and (max-width: 1660px) {
   /* */
