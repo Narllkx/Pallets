@@ -313,7 +313,7 @@ header {
     flex-wrap: wrap;
 
     .product-item {
-      border: 0.5px solid #25231c;
+      border: 0.5px solid #25231c3b;
       max-width: 420px;
       padding: 8px 35px 110px;
       margin-bottom: 42px;
@@ -423,6 +423,54 @@ header {
           font-size: 18px;
           color: #312c21;
           margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+.benefit {
+  .container {
+    h2 {
+      font-family: $font-2;
+      font-weight: 400;
+      font-size: 37px;
+      background: #b19178;
+      padding: 18px 63px 18px 130px;
+      display: inline-block;
+      text-transform: uppercase;
+      color: #fff;
+      position: relative;
+      left: -145px;
+      margin: 110px 0 90px;
+    }
+    .benefit-box {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .benefit-item {
+        min-width: 322px;
+        min-height: 234px;
+        border: 0.5px solid #25231c3b;
+        padding: 25px 0 53px 27px;
+        margin-bottom: 35px;
+        h3 {
+          font-family: $font-2;
+          font-weight: 600;
+          font-size: 52px;
+          -webkit-text-stroke: 1px #312c21;
+          color: #fff;
+        }
+        h4 {
+          font-weight: 700;
+          font-size: 19px;
+          color: #ff7000;
+          margin-top: 10px;
+        }
+        h5 {
+          font-weight: 300;
+          font-size: 16px;
+          color: #312c21;
+          margin-top: 5px;
         }
       }
     }
