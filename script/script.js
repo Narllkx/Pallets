@@ -44,3 +44,19 @@ async function handleSubmit(e) {
 
   $form.reset();
 }
+
+// Form sending
+
+let header = $(".bottom-to-top, header"),
+  scrollPrev = 0;
+
+$(window).scroll(function () {
+  let scrolled = $(window).scrollTop();
+
+  if (scrolled > 350 && scrolled > scrollPrev) {
+    header.addClass("active");
+  } else {
+    header.removeClass("active");
+  }
+  scrollPrev = scrolled;
+});

@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
+@keyframes bottom-top {
+  0% {
+    bottom: 10px;
+    right: 20px; }
+  100% {
+    bottom: 5px; } }
 a {
   text-decoration: none; }
+
+html {
+  line-height: 1.15;
+  scroll-behavior: smooth; }
 
 * {
   box-sizing: border-box;
@@ -23,6 +33,44 @@ body {
 ::selection {
   background-color: rgba(119, 91, 0, 0.36);
   color: #000; }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 20px; }
+
+::-webkit-scrollbar-thumb {
+  background: #775b00;
+  border: none;
+  border-radius: 50px; }
+
+::-webkit-scrollbar-track {
+  background: none;
+  border: none;
+  border-radius: 50px; }
+
+.bottom-to-top {
+  position: fixed;
+  z-index: 999;
+  width: 45px;
+  height: 45px;
+  bottom: -100px;
+  right: 20px;
+  opacity: 0;
+  background-color: #775b00;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  color: #fff;
+  transform: rotate(270deg);
+  transition: 3s; }
+  .bottom-to-top.active {
+    opacity: 1;
+    bottom: 10px;
+    animation: 2s bottom-top infinite; }
+  .bottom-to-top:hover {
+    transform: scale(1.2) rotate(270deg); }
 
 header .header-contact {
   background: #26201b;
@@ -527,7 +575,10 @@ footer {
         color: #b19178;
         margin-top: 20px;
         padding: 17px 42px;
-        border: 1.5px solid #b19178; }
+        border: 1.5px solid #b19178;
+        transition: 1s; }
+        footer .container .footer-box .footer-item:nth-child(4) .button:hover {
+          transform: scale(1.1); }
         footer .container .footer-box .footer-item:nth-child(4) .button img {
           margin-right: 10px; }
       footer .container .footer-box .footer-item:nth-child(4) .number {
