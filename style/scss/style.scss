@@ -36,6 +36,7 @@ body {
   margin: 0;
   font-family: $font-1;
   background-color: $background-color;
+  overflow-x: hidden;
 }
 
 .container {
@@ -598,7 +599,7 @@ header {
           font-weight: 600;
           font-size: 32.1429px;
           color: #ffffff;
-          padding: 35px 250px;
+          padding: 35px 220px;
           display: block;
           text-align: center;
           margin-top: 15px;
