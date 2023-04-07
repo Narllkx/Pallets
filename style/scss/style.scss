@@ -476,6 +476,155 @@ header {
     }
   }
 }
+.support {
+  .container {
+    h2 {
+      font-family: $font-2;
+      font-weight: 400;
+      font-size: 37px;
+      background: #b19178;
+      padding: 18px 63px 18px 130px;
+      display: inline-block;
+      text-transform: uppercase;
+      color: #fff;
+      position: relative;
+      left: -145px;
+      margin: 110px 0 90px;
+    }
+    .support-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .support-left {
+        .support-left-text {
+          position: relative;
+          z-index: 1;
+          padding: 35px 0 35px 70px;
+          border: 0.5px solid #312c21;
+          top: -10px;
+          background-color: #fff;
+          h3 {
+            font-weight: 400;
+            font-size: 29px;
+            color: #312c21;
+          }
+          &::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: -68px;
+            left: 199px;
+            transform: rotate(153deg);
+            display: block;
+            border-top: 50px solid transparent;
+            border-left: 100px solid #fff;
+            border-bottom: 50px solid transparent;
+            z-index: 2;
+          }
+          &::after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            z-index: 0;
+            top: -70px;
+            left: 200px;
+            transform: rotate(153deg);
+            display: block;
+            border-top: 50px solid transparent;
+            border-left: 100px solid #312c21;
+            border-bottom: 50px solid transparent;
+          }
+        }
+      }
+      .support-right {
+        h4 {
+          font-weight: 500;
+          font-size: 33px;
+          color: #ff7000;
+          margin-bottom: 40px;
+        }
+        .name,
+        .phone-number,
+        .text {
+          background: #ffffff;
+          border: 0.5px solid #312c2169;
+          padding: 26px 0 26px 40px;
+          display: block;
+          margin: 15px 0;
+          width: 620px;
+          height: 75px;
+          font-weight: 400;
+          font-size: 19.2857px;
+          color: rgba(65, 58, 53, 0.5);
+          &::placeholder {
+            font-weight: 400;
+            font-size: 19.2857px;
+            color: rgba(65, 58, 53, 0.5);
+          }
+        }
+        .text {
+          margin-bottom: 35px;
+        }
+        .checkbox-box {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          flex-wrap: wrap;
+          max-width: 400px;
+          font-weight: 500;
+          font-size: 12.8571px;
+          color: #312c21;
+          .checkbox {
+            border: 0.5px solid #312c2169;
+            width: 23px;
+            height: 23px;
+            border-radius: 0;
+            margin-right: 15px;
+            border: none;
+            &:checked + .support-button {
+              background: #b19178;
+              cursor: pointer;
+              transform: scale(1);
+            }
+          }
+        }
+        .support-button {
+          background: #796759;
+          border-radius: 5.35714px;
+          font-weight: 600;
+          font-size: 32.1429px;
+          color: #ffffff;
+          padding: 35px 250px;
+          display: block;
+          text-align: center;
+          margin-top: 15px;
+          cursor: not-allowed;
+          transform: scale(0.9);
+          transition: 1s;
+          &.active {
+            background: #b19178;
+            cursor: pointer;
+            transform: scale(1);
+          }
+        }
+        .suppotr-button-subtext {
+          font-weight: 300;
+          font-size: 12.8571px;
+          line-height: 15px;
+          color: #312c21;
+          margin-top: 18px;
+          display: inline-block;
+          img {
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+  }
+}
 
 //--------------------------------Media--------------------------------
 @media only screen and (max-width: 1660px) {
