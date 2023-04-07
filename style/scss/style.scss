@@ -588,6 +588,7 @@ header {
               background: #b19178;
               cursor: pointer;
               transform: scale(1);
+              z-index: 3;
             }
           }
         }
@@ -604,11 +605,7 @@ header {
           cursor: not-allowed;
           transform: scale(0.9);
           transition: 1s;
-          &.active {
-            background: #b19178;
-            cursor: pointer;
-            transform: scale(1);
-          }
+          z-index: -5;
         }
         .suppotr-button-subtext {
           font-weight: 300;

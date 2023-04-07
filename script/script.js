@@ -15,20 +15,32 @@ $(".slider-box").slick({
 });
 /* Slider */
 
-let form = document.querySelector("form");
-form.addEventListener("submit", (e) => {
+const $contactForm = document.querySelector("#form");
+
+$contactForm.addEventListener("submit", handleSubmit);
+
+async function handleSubmit(e) {
   e.preventDefault();
-  document.querySelector("#sub").value = "Отправка...";
-  let data = new FormData(form);
-  fetch(
-    "https://docs.google.com/spreadsheets/d/1PVRZWMerbTAO9aebm-lvtD_cezQxHwMAUGrhRoclVak/edit#gid=0",
+
+  const $form = e.target,
+    $name = $form.querySelector("#name");
+  $phone = $form.querySelector("#phone");
+  $text = $form.querySelector("#text");
+  response = await fetch(
+    "https://api.apispreadsheets.com/data/mbghqFr0FfC0wqL8/",
     {
       method: "POST",
-      body: data,
+      body: JSON.stringify({
+        data: {
+          name: $name.value,
+          phone: $phone.value,
+          text: $text.value,
+        },
+      }),
     }
-  )
-    .then((res) => res.text())
-    .then((data) => {
-      document.querySelector("#sub").value = "Отправлено!";
-    });
-});
+  );
+  if (response.status === 201) alert("Отправлено!");
+  else alert("Повторите попытку ещё раз!");
+
+  $form.reset();
+}
