@@ -167,7 +167,6 @@ header {
     .slider-box {
       .slider-item {
         height: 715px;
-
         &::after {
           content: "";
           max-width: 1600px;
@@ -175,10 +174,24 @@ header {
           z-index: -1;
           width: 100%;
           height: 715px;
-          background-image: url(../images/slider/slider-bg.png);
+          background-size: cover;
           background-repeat: no-repeat;
         }
-
+        &:nth-child(1) {
+          &:after {
+            background-image: url(../images/slider/slider-bg.png);
+          }
+        }
+        &:nth-child(2) {
+          &:after {
+            background-image: url(../images/slider/slider-bg.png);
+          }
+        }
+        &:nth-child(3) {
+          &:after {
+            background-image: url(../images/slider/slider-bg.png);
+          }
+        }
         .slider-info {
           position: relative;
           left: 0;

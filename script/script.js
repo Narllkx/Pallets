@@ -10,7 +10,7 @@ $(".slider-box").slick({
   dots: true,
   speed: 1500,
   fade: true,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2000,
 });
 /* Slider */
