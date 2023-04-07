@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbf19fd5-32ad-4166-bc1d-8ec52f399c93" name="Changes" comment="test для нари">
-      <change afterPath="$PROJECT_DIR$/pallets/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="fbf19fd5-32ad-4166-bc1d-8ec52f399c93" name="Changes" comment="backend_1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +66,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\HP\narllkx_project" />
       <recent name="C:\Users\HP\narllkx_project\templates" />
+      <recent name="C:\Users\HP\narllkx_project" />
     </key>
   </component>
   <component name="RunManager">
@@ -117,7 +117,7 @@
       <updated>1680885980312</updated>
       <workItem from="1680885981238" duration="1932000" />
       <workItem from="1680888259737" duration="1469000" />
-      <workItem from="1680889770023" duration="4956000" />
+      <workItem from="1680889770023" duration="6513000" />
     </task>
     <task id="LOCAL-00001" summary="test для нари">
       <created>1680886711051</created>
@@ -133,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680887933088</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="backend_1">
+      <created>1680894922015</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680894922015</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +159,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test для нари" />
-    <option name="LAST_COMMIT_MESSAGE" value="test для нари" />
+    <MESSAGE value="backend_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="backend_1" />
   </component>
 </project>
