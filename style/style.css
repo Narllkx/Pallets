@@ -595,13 +595,68 @@ footer {
 @media only screen and (max-width: 1660px) {
   /* */ }
 @media only screen and (max-width: 1440px) {
-  /* */ }
+  .product .product-box {
+    justify-content: space-around; }
+
+  .about-us .container .about-us-box {
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .about-us .container .about-us-box .about-us-item {
+      margin: 20px; }
+
+  .benefit .container .benefit-box {
+    justify-content: space-around; }
+
+  .support .container .support-box {
+    justify-content: space-around; }
+    .support .container .support-box form {
+      margin-top: 30px; }
+
+  footer .container .footer-box {
+    flex-wrap: wrap; } }
 @media only screen and (max-width: 1280px) {
-  /* */ }
+  header nav {
+    top: 130px; }
+  header .header-contact {
+    padding-bottom: 100px; }
+    header .header-contact ul {
+      flex-wrap: wrap;
+      justify-content: space-evenly; } }
 @media only screen and (max-width: 1024px) {
-  /* */ }
+  header .slick-next {
+    right: 20px; }
+  header .slick-prev {
+    left: 20px; }
+  header .header-slider .slider-box .slider-item .slider-info .slider-text {
+    text-align: center;
+    padding: 61px 0 0 0px; } }
 @media only screen and (max-width: 991px) {
-  /* */ }
+  header nav {
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    header nav .nav-button {
+      margin-top: 20px; }
+
+  .support {
+    overflow-x: hidden; }
+
+  footer .container .footer-box .footer-item:nth-child(4) {
+    margin-top: 20px; }
+
+  .product h2 {
+    left: -110px; }
+
+  .about-us .container h2 {
+    left: -110px; }
+
+  .benefit .container h2 {
+    left: -110px; }
+
+  .support .container h2 {
+    left: -110px; }
+
+  footer .container .footer-box {
+    justify-content: space-around; } }
 @media only screen and (max-width: 768px) {
   /* */ }
 @media only screen and (max-width: 480px) {

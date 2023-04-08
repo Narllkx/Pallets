@@ -4,6 +4,7 @@ $background-color: #fff;
 $container-width: 1345px;
 $selection: rgba(119, 91, 0, 0.36);
 $selection-color: #000;
+$title-left: -145px;
 
 $font-1: "Roboto";
 $font-2: "Oswald";
@@ -14,11 +15,11 @@ $font-2: "Oswald";
 
 //--------------------------------Keyframes--------------------------------
 @keyframes bottom-top {
-  0%{
+  0% {
     bottom: 10px;
     right: 20px;
   }
-  100%{
+  100% {
     bottom: 5px;
   }
 }
@@ -78,7 +79,7 @@ body {
   border-radius: 50px;
 }
 
-.bottom-to-top{
+.bottom-to-top {
   position: fixed;
   z-index: 999;
   width: 45px;
@@ -95,12 +96,12 @@ body {
   color: #fff;
   transform: rotate(270deg);
   transition: 3s;
-  &.active{
+  &.active {
     opacity: 1;
     bottom: 10px;
     animation: 2s bottom-top infinite;
   }
-  &:hover{
+  &:hover {
     transform: scale(1.2) rotate(270deg);
   }
 }
@@ -374,7 +375,7 @@ header {
     display: inline-block;
     margin: 150px 0 100px;
     position: relative;
-    left: -145px;
+    left: $title-left;
   }
   .product-box {
     display: flex;
@@ -442,7 +443,7 @@ header {
       text-transform: uppercase;
       color: #312c21;
       position: relative;
-      left: -145px;
+      left: $title-left;
       margin-bottom: 75px;
     }
     .about-us-box {
@@ -509,7 +510,7 @@ header {
       text-transform: uppercase;
       color: #fff;
       position: relative;
-      left: -145px;
+      left: $title-left;
       margin: 110px 0 90px;
     }
     .benefit-box {
@@ -557,7 +558,7 @@ header {
       text-transform: uppercase;
       color: #fff;
       position: relative;
-      left: -145px;
+      left: $title-left;
       margin: 110px 0 90px;
     }
     .support-box {
@@ -766,7 +767,7 @@ footer {
             padding: 17px 42px;
             border: 1.5px solid #b19178;
             transition: 1s;
-            &:hover{
+            &:hover {
               transform: scale(1.1);
             }
             img {
@@ -797,19 +798,89 @@ footer {
 }
 
 @media only screen and (max-width: 1440px) {
-  /* */
+  .product .product-box {
+    justify-content: space-around;
+  }
+  .about-us .container .about-us-box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .about-us-item {
+      margin: 20px;
+    }
+  }
+  .benefit .container .benefit-box {
+    justify-content: space-around;
+  }
+  .support .container .support-box {
+    justify-content: space-around;
+    form {
+      margin-top: 30px;
+    }
+  }
+  footer .container .footer-box {
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
-  /* */
+  header {
+    nav {
+      top: 130px;
+    }
+    .header-contact {
+      padding-bottom: 100px;
+      ul {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-  /* */
+  header {
+    .slick-next {
+      right: 20px;
+    }
+    .slick-prev {
+      left: 20px;
+    }
+    .header-slider .slider-box .slider-item .slider-info .slider-text {
+      text-align: center;
+      padding: 61px 0 0 0px;
+    }
+  }
 }
 
 @media only screen and (max-width: 991px) {
-  /* */
+  header nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .nav-button {
+      margin-top: 20px;
+    }
+  }
+  .support {
+    overflow-x: hidden;
+  }
+  footer .container .footer-box .footer-item:nth-child(4) {
+    margin-top: 20px;
+  }
+  .product h2 {
+    left: -110px;
+  }
+  .about-us .container h2{
+    left: -110px;
+  }
+  .benefit .container h2{
+    left: -110px
+  }
+  .support .container h2{
+    left: -110px
+  }
+  footer .container .footer-box {
+    justify-content: space-around;
+}
 }
 
 @media only screen and (max-width: 768px) {
