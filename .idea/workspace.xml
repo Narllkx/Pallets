@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbf19fd5-32ad-4166-bc1d-8ec52f399c93" name="Changes" comment="backend_1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="fbf19fd5-32ad-4166-bc1d-8ec52f399c93" name="Changes" comment="end of project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +47,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/HP/PycharmProjects/P10-book_store",
     "node.js.detected.package.eslint": "true",
@@ -66,8 +64,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\HP\narllkx_project\templates" />
       <recent name="C:\Users\HP\narllkx_project" />
+      <recent name="C:\Users\HP\narllkx_project\templates" />
+      <recent name="C:\Users\HP\narllkx_project\static" />
+      <recent name="C:\Users\HP\narllkx_project\static\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -140,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680894922015</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="end of project">
+      <created>1682508590072</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682508590072</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +167,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test для нари" />
     <MESSAGE value="backend_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="backend_1" />
+    <MESSAGE value="end of project" />
+    <option name="LAST_COMMIT_MESSAGE" value="end of project" />
   </component>
 </project>

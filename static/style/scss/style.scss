@@ -235,17 +235,17 @@ header {
         }
         &:nth-child(1) {
           &:after {
-            background-image: url(../images/slider/slider-bg.png);
+            background-image: url(../../images/slider/slider-bg.png);
           }
         }
         &:nth-child(2) {
           &:after {
-            background-image: url(../images/slider/slider-bg.png);
+            background-image: url(../../images/slider/slider-bg.png);
           }
         }
         &:nth-child(3) {
           &:after {
-            background-image: url(../images/slider/slider-bg.png);
+            background-image: url(../../images/slider/slider-bg.png);
           }
         }
         .slider-info {
@@ -307,7 +307,7 @@ header {
     font-size: 0;
     width: 32px;
     height: 62px;
-    background: url(../images/slider/arrow.svg);
+    background: url(../../images/slider/arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -379,7 +379,7 @@ header {
   }
   .product-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 
     .product-item {
@@ -457,23 +457,23 @@ header {
         min-height: 240px;
         background-repeat: no-repeat;
         &:nth-child(1) {
-          background-image: url("../images/about-us/1.svg");
+          background-image: url("../../images/about-us/1.svg");
           background-position: 15px;
         }
         &:nth-child(2) {
-          background-image: url("../images/about-us/2.svg");
+          background-image: url("../../images/about-us/2.svg");
           background-position: 35px 30px;
         }
         &:nth-child(3) {
-          background-image: url("../images/about-us/3.svg");
+          background-image: url("../../images/about-us/3.svg");
           background-position: 20px 115px;
         }
         &:nth-child(4) {
-          background-image: url("../images/about-us/4.svg");
+          background-image: url("../../images/about-us/4.svg");
           background-position: 70px 55px;
         }
         &:nth-child(5) {
-          background-image: url("../images/about-us/5.svg");
+          background-image: url("../../images/about-us/5.svg");
           background-position: 30px 15px;
         }
         h3 {

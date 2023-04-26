@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -99,8 +99,8 @@
       }
     </style>
   </head>
-<body>
-    <div class="loader">
+  <body>
+  <div class="loader">
       <div class="newtons-cradle">
         <div class="newtons-cradle__dot"></div>
         <div class="newtons-cradle__dot"></div>
@@ -199,56 +199,15 @@
           >
         </nav>
       </div>
-      <section class="header-slider">
-        <div class="slider-box">
-          <div class="slider-item">
-            <div class="slider-info">
-              <div class="slider-text">
-                <h2 class="slider-title">Продажа поддонов Б/У в Москве</h2>
-                <h3 class="slider-subtitle">
-                  Доставка осуществляется круглосуточно, <br />
-                  в любое удобное время
-                </h3>
-                <a href="{% url 'products' %}" class="slider-button">Подробнее</a>
-              </div>
-            </div>
-          </div>
-          <div class="slider-item">
-            <div class="slider-info">
-              <div class="slider-text">
-                <h2 class="slider-title">
-                  Продажа поддонов Б/У в Санк-Питербурге
-                </h2>
-                <h3 class="slider-subtitle">
-                  Доставка осуществляется круглосуточно, <br />
-                  в любое удобное время
-                </h3>
-                <a href="{% url 'products' %}" class="slider-button">Подробнее</a>
-              </div>
-            </div>
-          </div>
-          <div class="slider-item">
-            <div class="slider-info">
-              <div class="slider-text">
-                    <h2 class="slider-title">Продажа поддонов Б/У в Минске</h2>
-                <h3 class="slider-subtitle">
-                  Доставка осуществляется круглосуточно, <br />
-                  в любое удобное время
-                </h3>
-                <a href="{% url 'products' %}" class="slider-button">Подробнее</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </header>
-    <section class="product">
+
+ <section class="product">
     <div class="container">
         <h2>ДЕРЕВЯННЫЕ ПОДДОНЫ Б/У</h2>
         <div class="product-box">
             {% for Pallets in pallets %}
                 <div class="product-item" data-aos="flip-up" data-aos-duration="500">
-                        <img class="card-img-top" src="../{{ Pallets.image.url }}" alt="#">
+                        <img class="card-img-top" src="../{{ Pallets.image.url }}"   alt="#">
                         <div class="product-item-box">
                             <h3 class="item-title">
                                 {{ Pallets.title }}
@@ -266,192 +225,8 @@
         </div>
     </div>
     </section>
-    <section class="about-us">
-      <div class="container">
-        <h2 data-aos="fade-right">О нас</h2>
-        <div class="about-us-box">
-          <div class="about-us-item" data-aos="flip-down">
-            <h3>Мы</h3>
-            <h4>10 ЛЕТ</h4>
-            <h5>на паллетном<br />рынке</h5>
-          </div>
-          <div class="about-us-item" data-aos="flip-down">
-            <h3>У нас</h3>
-            <h4>12</h4>
-            <h5>складов по<br />ЦФО</h5>
-          </div>
-          <div class="about-us-item" data-aos="flip-down">
-            <h3>Доставка</h3>
-            <h4>24 ЧАСА</h4>
-            <h5>в сутки, в<br />любое время</h5>
-          </div>
-          <div class="about-us-item" data-aos="flip-down">
-            <h3>У нас</h3>
-            <h4>50 +</h4>
-            <h5>постоянных<br />клиентов</h5>
-          </div>
-          <div class="about-us-item" data-aos="flip-down">
-            <h3>Ежегодно</h3>
-            <h4>300 000 +</h4>
-            <h5>единиц<br />годовой оборот</h5>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="benefit">
-      <div class="container">
-        <h2 data-aos="fade-right">Почему с нами выгодно</h2>
-        <div class="benefit-box">
-          <div
-            class="benefit-item"
-            data-aos="flip-down"
-            data-aos-duration="200"
-          >
-            <h3>01</h3>
-            <h4>НАЛИЧИЕ ТОВАРА</h4>
-            <h5>
-              Подходящие поддоны есть всегда!<br />Мы подберём необходимый
-              паллет.
-            </h5>
-          </div>
-          <div
-            class="benefit-item"
-            data-aos="flip-down"
-            data-aos-duration="400"
-          >
-            <h3>02</h3>
-            <h4>СТАБИЛЬНОСТЬ</h4>
-            <h5>
-              Наша надежность подтверждена<br />рекомендациями ведущих<br />компаний.
-            </h5>
-          </div>
-          <div
-            class="benefit-item"
-            data-aos="flip-down"
-            data-aos-duration="600"
-          >
-            <h3>03</h3>
-            <h4>ПРОФЕССИОНАЛИЗМ</h4>
-            <h5>
-              Анализируем потребности <br />
-              и усовершенствуем услуги.
-            </h5>
-          </div>
-          <div
-            class="benefit-item"
-            data-aos="flip-down"
-            data-aos-duration="800"
-          >
-            <h3>04</h3>
-            <h4>КАЧЕСТВО</h4>
-            <h5>У нас многоэтапный контроль<br />качества продукции</h5>
-          </div>
-          <div
-            class="benefit-item"
-            data-aos="flip-down"
-            data-aos-duration="1000"
-          >
-            <h3>05</h3>
-            <h4>ЭКОНОМИЧНОСТЬ</h4>
-            <h5>
-              Знаем секреты<br />экономии в области паллетной<br />логистики.
-              Сократите Ваши затраты!
-            </h5>
-          </div>
-          <div
-            class="benefit-item"
-            data-aos="flip-down"
-            data-aos-duration="1400"
-          >
-            <h3>06</h3>
-            <h4>КРУГЛОСУТОЧНАЯ ДОСТАВКА</h4>
-            <h5>
-              Быстрая и аккуратная доставка<br />собственным транспортом 24/7.
-            </h5>
-          </div>
-          <div
-            class="benefit-item"
-            data-aos="flip-down"
-            data-aos-duration="1200"
-          >
-            <h3>07</h3>
-            <h4>ОТСРОЧКА ПЛАТЕЖА</h4>
-            <h5>Мы готовы пойти на встречу нашим<br />заказчикам.</h5>
-          </div>
-          <div
-            class="benefit-item"
-            data-aos="flip-down"
-            data-aos-duration="1000"
-          >
-            <h3>08</h3>
-            <h4>ОПЕРАТИВНОСТЬ</h4>
-            <h5>Оперативный подход, и грамотно<br />выстроенная логистика.</h5>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="support">
-      <div class="container">
-        <h2 data-aos="fade-right" data-aos="fade-right">
-          У вас остались вопросы?
-        </h2>
-        <div class="support-box">
-          <div class="support-left" data-aos="fade-right">
-            <img src="../static/images/support/1.png" alt="#" />
-            <div class="support-left-text">
-              <h3>
-                Мы с удовольствием ответим на <br />
-                все вопросы и проконсультируют <br />
-                по товарным позициям.
-              </h3>
-            </div>
-          </div>
-          <form
-            data-aos="fade-left"
-            class="support-right"
-            id="form"
-            action="https://api.apispreadsheets.com/data/mbghqFr0FfC0wqL8/"
-          >
-            <h4>Отправить заявку</h4>
-            <input
-              type="text"
-              class="name"
-              placeholder="Ваше имя"
-              name="name"
-              id="name"
-            />
-            <input
-              type="tel"
-              class="phone-number"
-              placeholder="Номер телефона"
-              name="phone"
-              id="phone"
-            />
-            <input
-              type="text"
-              class="text"
-              placeholder="Введите текст"
-              name="text"
-              id="text"
-            />
-            <label class="checkbox-box">
-              <input type="checkbox" class="checkbox" />
-              Даю согласие на обработку персональных данных
-              <input
-                type="submit"
-                class="support-button"
-                placeholder="Отправить"
-                id="sub"
-              />
-            </label>
-            <a href="#" class="suppotr-button-subtext"
-              ><img src="../static/images/support/2.svg" alt="#" />Ваши данные защищены</a
-            >
-          </form>
-        </div>
-      </div>
-    </section>
-    <footer>
+
+  <footer>
       <div class="container">
         <div class="footer-box">
           <div class="footer-item">

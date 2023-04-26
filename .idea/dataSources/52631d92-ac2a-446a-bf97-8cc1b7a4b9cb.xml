@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="narllkx_projecct@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.45">
+    <root id="1">
+      <ServerVersion>15.2</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="Django"/>
+    <database id="3" parent="1" name="P10_test"/>
+    <database id="4" parent="1" name="Universitetlar"/>
+    <database id="5" parent="1" name="book_shop"/>
+    <database id="6" parent="1" name="demo"/>
+    <database id="7" parent="1" name="narllkx_projecct">
+      <Current>1</Current>
+    </database>
+    <database id="8" parent="1" name="narllkx_project"/>
+    <database id="9" parent="1" name="northwind"/>
+    <database id="10" parent="1" name="postgres"/>
+    <database id="11" parent="1" name="taxidb"/>
+    <database id="12" parent="1" name="template0"/>
+    <database id="13" parent="1" name="template1"/>
+    <database id="14" parent="1" name="trelllo"/>
+    <schema id="15" parent="7" name="information_schema"/>
+    <schema id="16" parent="7" name="pg_catalog"/>
+    <schema id="17" parent="7" name="public">
+      <Current>1</Current>
+    </schema>
+  </database-model>
+</dataSource>
